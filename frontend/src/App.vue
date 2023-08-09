@@ -14,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #073a05;
   background-image: url('https://www.shutterstock.com/shutterstock/photos/1456834667/display_1500/stock-vector-camouflage-seamless-pattern-trendy-style-camo-repeat-print-vector-illustration-khaki-texture-1456834667.jpg');
 }
 
@@ -24,7 +24,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #06531d;
 }
 
 nav a.router-link-exact-active {

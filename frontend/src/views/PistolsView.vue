@@ -2,14 +2,31 @@
   <div class="pistols">
     <h1>Pistols</h1>
 
-    <pistol-item pistolName="Desert Eagle" imgSrc="https://oqtagonmedia-1224e.kxcdn.com/media/catalog/product/cache/627d1c6dd6ad1c8dba646f43d0a4e772/7/4/7459_1_.jpg.webp"></pistol-item>
-    <pistol-item pistolName="Carpati" imgSrc="https://jurnalulph.ro/images/stories/2016/februarie/17/glock.jpg"></pistol-item>
+    <ul>
+      <li v-for="(pistol) in pistols" :key="pistol.id">
+        
+        <pistol-item :pistolName=pistol.nume :imgSrc=pistol.ImgSource></pistol-item>
+       
+      </li>
+    </ul>
   </div>
 </template>
 <script>
+import axios from  "axios";
 import PistolItem from "../components/PistoItem.vue";
 
 export default {
+  data() {
+    return {
+      pistols: [],
+      
+    };
+  },
+  async mounted() {
+    const response = await axios.get("http://localhost:3002/pistols/");
+    this.pistols = response.data.data;
+    console.log(this.pistols);
+  },
   components: {
     PistolItem,
   },
