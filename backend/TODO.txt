@@ -1,0 +1,9 @@
+La inceput sa apara login page si apoi dupa ce te loghezi apar paginile Home, Pistols, Contact, etc in functie de tipul userului
+In tabela contact add column for "content/comentarii"
+Add contact page
+Add in BE serviciu POST care adauga in tabela contact
+Call serviciul asta din new Contact page
+add in table "users" column "type/tip" care sa zica ce tip de user e(ex: begginer, normal, admin). Begginer vede meniu-urile in afara de ala de contact, 
+Normal poate sa si vada meniul de contact si sa adauge comentarii. Adminul poate sa adauge noi pistoale.
+Pagina de vazut comentariile postate(din tabela contact) care e vizibila doar adminului.(add serviciu de GET care ia comentariile din contents)
+Pentru ADD PISTOL, trebuie adaugat un buton vizibil doar Adminului, care deschide un form unde bagi datele necesare(nume, imagine, descriere, te uiti in tabela)
